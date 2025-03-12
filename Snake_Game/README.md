@@ -9,8 +9,7 @@ Nicole Guri
 
 ## Description
 This coursework is about maintaining and extending a re-implementation of a classic retro game
-called Snake. As the snake eats food, its length and score increases. This is the fundamental game objective. There are two milestones to complete. Milestone one counts for 10% of the grade and
-Milestone 2 counts for 90% of the grade. 
+called Snake. As the snake eats food, its length and score increases. This is the fundamental game objective. 
 
 ## Installation
 To install and run this project, you first need to unzip the file. Then open IntelliJ, and click where it says open project. Open SnakeGameCoursework1 file. All the packages and files will appear on Intellij. To run this project you can either run it from Main or from Maven, as this project supports both.
