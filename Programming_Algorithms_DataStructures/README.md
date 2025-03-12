@@ -8,37 +8,6 @@ This coursework focuses on implementing four algorithms which employ linked list
 
 In this coursework you will implement a number of library functions. For each task, an executable program is provided which will include and use the library functions which you implement. You will not need to add any files to your forked repository for this coursework, as all the required files are present. For each task, you will add function implementations to certain source files in your repository. A `Makefile` is also provided to build and test your library functions. All tasks will be compiled with the gcc `-ansi -pedantic-errors` switches.
 
-## Assessment
-
-This coursework is worth **20%** of your final course grade. The points awarded for each task are as follows:
-
-|            | Compilation | Implementation | Execution | **Total** |
-| ---------- | :---------: | :------------: | :-------: | :-------: |
-| **Task 1** | 2           | 1              | 4         | **7**     |
-| **Task 2** | 2           | 1              | 4         | **7**     |
-| **Task 3** | 2           | 1              | 10        | **13**     |
-| **Task 4** | 2           | 1              | 6         | **9**     |
-
-
-For each task, you are awarded *two* points if your program compiles correctly: *one* point if it compiles without errors, and a further *one* point if it compiles without errors *and* warnings. If your program follows the implementation instructions given in the task details below, you are awarded *one* point.
-
-For each of Tasks 1 and 2, if your program is implemented so that no memory leaks occur when it is executed, you are awarded *two* points. If your program produces the correct output, you are awarded a further *two* points.
-
-For Task 3, there are five test cases which your program will be tested on. These test cases are described in the task details below. For each test case, if your program is implemented so that no memory leaks occur when it is executed with the test case, you are awarded *one* point. If your program produces the correct output with the test case, you are awarded a further *one* point.
-
-For Task 4, you will be awarded points for each of the first three test cases used in Task 3. For each of these three test cases, if your program is implemented so that no memory leaks occur when it is executed with the test case, you are awarded *one* point. If your program produces the correct output with the test case, you are awarded a further *one* point.
-
-The contribution towards your final course grade is calculated as follows:
-
-```maths
-	floor(20 * (task1_points_awarded + task2_points_awarded + task3_points_awarded + task4_points_awarded) / 36)
-```
-
-Your provisional score for each task can be viewed on GitLab after every push to `projects.cs.nott.ac.uk`. Your final score will be based on the code in the last commit pushed to `projects.cs.nott.ac.uk` *before* the coursework deadline. Commits pushed after the coursework deadline will be disregarded. After the coursework deadline, your code will undergo further review and, based on this review, your provisional score may go up or down. This further review will include checks for code plagiarism and for trivial implementations e.g. implementations just containing an empty main function or clearly not written following the task guidelines. Final scores will be published on the COMP1005 moodle pages around a week after the coursework deadline.
-
-Your repository contains a file called `.gitlab-ci.yml`. This file is used during the assessment process and *must not* be removed or edited in any way. Any tampering with this file will result in a score of zero for this coursework.
-
-This coursework is individual work i.e. *must be your own work* and follow the University [Academic integrity and misconduct](https://www.nottingham.ac.uk/studyingeffectively/studying/integrity/index.aspx) guidance.
 
 ## Task 1
 
