@@ -27,7 +27,7 @@ A **C-based TCP/IP server** implementing **Dijkstra’s shortest path algorithm*
 ---
 
 ## 📫 Contact Me
-📧 Email: n.guri003@gmail.com 
+📧 [Gmail](n.guri003@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/nicole-guri-241845257/)  
 🌐 [Portfolio Website](https://yourusername.github.io/portfolio)
 
