@@ -1,0 +1,123 @@
+/* Styling for the whiteboardNavbar */
+.whiteboardNavbar {
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Layout children in a row */
+    justify-content: space-between; /* Space evenly between children */
+    align-items: center; /* Align items vertically at the center */
+    padding: 1em 3em; /* Padding of 1em on the top and bottom, 3em on the left and right */
+    background-color: var(--color-1); /* Use CSS variable for background color */
+  }
+
+/* Styling for the controls container */
+.controls {
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Layout children in a row */
+    gap: var(--gap-1); /* Set gap between children using CSS variable */
+  }
+
+/* Styling for buttons */
+.button {
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: none; /* Remove border */
+  border: 2px solid transparent; /* Add transparent border */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for buttons on hover */
+.button:hover {
+    border: 2px solid var(--color-accent); /* Change border color on hover */
+    background-color: var(--color-1); /* Change background color on hover */
+    color: var(--color-2); /* Change text color on hover */
+  }
+  
+  /* Styling for the sessionCodeButton */
+  .sessionCodeButton {
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border: 2px solid #2f293a; /* Set border */
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Use CSS variable for text color */
+    outline: none; /* Remove outline */
+    text-align: center; /* Align text to the center */
+    cursor: grab; /* Change cursor to grab */
+    transition: 0.33s ease-in-out; /* Add transition effect */
+  }
+  
+  /* Styling for sessionCodeButton on hover */
+  .sessionCodeButton:hover {
+    border: 2px solid var(--color-accent); /* Change border color on hover */
+    border-radius: 1rem; /* Add border radius on hover */
+  }
+  
+  /* Styling for sessionOwnerButton */
+  .sessionOwnerButton {
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border: 2px solid #2f293a; /* Set border */
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Use CSS variable for text color */
+    outline: none; /* Remove outline */
+    text-align: center; /* Align text to the center */
+    transition: 0.33s ease-in-out; /* Add transition effect */
+  }
+  
+  /* Styling for sessionGuestButton */
+  .sessionGuestButton {
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border: 2px solid #2f293a; /* Set border */
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Use CSS variable for text color */
+    outline: none; /* Remove outline */
+    text-align: center; /* Align text to the center */
+    transition: 0.33s ease-in-out; /* Add transition effect */
+  }
+  
+  /* Styling for sessionGuestButton on hover */
+  .sessionGuestButton:hover {
+    border: 2px solid var(--color-accent); /* Change border color on hover */
+    border-radius: 1rem; /* Add border radius on hover */
+  }
+  
+  /* Styling for sessionGuestTag */
+  .sessionGuestTag {
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border: none; /* Remove border */
+    border: 2px solid transparent; /* Add transparent border */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Media query for screens narrower than 768px */
+  @media (max-width: 768px) {
+    .whiteboardNavbar {
+      display: flex; /* Use flexbox layout */
+      flex-flow: column-reverse; /* Layout children in a column-reverse direction */
+      gap: 1em; /* Set gap between children */
+      padding: 1em; /* Padding of 1em */
+      width: 100%; /* Occupy full width */
+    }
+    .controls {
+      width: 100%; /* Occupy full width */
+      display: flex; /* Use flexbox layout */
+      flex-flow: row; /* Layout children in a row */
+      justify-content: space-between; /* Space evenly between children */
+    }
+    .button {
+      width: 100%; /* Occupy full width */
+    }
+    .sessionCodeButton {
+      width: 100%; /* Occupy full width */
+    }
+    .sessionGuestButton {
+      width: 100%; /* Occupy full width */
+    }
+    .sessionOwnerButton {
+      width: 100%; /* Occupy full width */
+    }
+    .session {
+      display: flex; /* Use flexbox layout */
+      flex-flow: column; /* Layout children in a column */
+    }
+    .button {
+        width: 100%; /* Occupy full width */
+    }
+}

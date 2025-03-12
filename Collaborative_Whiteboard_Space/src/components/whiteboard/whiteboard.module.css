@@ -1,0 +1,141 @@
+/* Styling for the whiteboard component */
+.whiteboard {
+  position: relative; /* Set position relative */
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: 1px solid var(--color-1); /* Use CSS variable for border color */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+  background-color: var(--color-3); /* Use CSS variable for background color */
+  width: 100%; /* Occupy full width */
+}
+
+.board {
+  height: 100%; /* Occupy full height */
+  width: 100%; /* Occupy full width */
+  position: absolute; /* Position absolute */
+  top: 0; /* Position from top */
+  left: 0; /* Position from left */
+  z-index: 100; /* Set stacking order */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+}
+
+/* Styling for whiteboard controls */
+.whiteboardControls {
+  margin: var(--element-padding-1); /* Use CSS variable for margin */
+  position: absolute; /* Position absolute */
+  top: 0; /* Position from top */
+  right: 0; /* Position from right */
+  z-index: 200; /* Set stacking order */
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  gap: var(--gap-1); /* Use CSS variable for gap */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+}
+
+.undoRedoButton {
+  background-color: var(--color-2); /* Use CSS variable for background color */
+  padding: 1.5em; /* Set padding */
+  border: none; /* Remove border */
+  border-radius: 1.5em; /* Set border radius */
+  box-shadow: #00000026 1.95px 1.95px 2.6px; /* Add box shadow */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+.undoRedoButton:hover {
+  background-color: var(--color-accent); /* Change background color on hover */
+}
+
+.card {
+  opacity: 75%; /* Set opacity */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.card:hover {
+  margin-bottom: 2rem; /* Increase margin bottom on hover */
+  opacity: 100%; /* Change opacity on hover */
+}
+
+/* Styling for the toolbar */
+.toolBar {
+  box-sizing: border-box; /* Include border and padding in width and height */
+  position: absolute; /* Position absolute */
+  bottom: 0; /* Position from bottom */
+  left: 0; /* Position from left */
+  z-index: 200; /* Set stacking order */
+  margin: var(--element-padding-1); /* Use CSS variable for margin */
+  display: flex; /* Use flexbox layout */
+  flex-flow: column; /* Layout children in a column */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  max-width: 100%; /* Set maximum width */
+  width: 100%; /* Occupy full width */
+}
+
+.privateHands {
+  box-sizing: border-box; /* Include border and padding in width and height */
+  height: 100%; /* Occupy full height */
+  width: 100%; /* Occupy full width */
+  position: absolute; /* Position absolute */
+  bottom: 3rem; /* Position from bottom */
+  z-index: 200; /* Set stacking order */
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  align-items: right; /* Align children to the right */
+}
+
+.whiteboardTools {
+  box-sizing: border-box; /* Include border and padding in width and height */
+  height: 100%; /* Occupy full height */
+  width: min-content; /* Set width to fit content */
+  z-index: 300; /* Set stacking order */
+  background-color: var(--color-2); /* Use CSS variable for background color */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+  box-shadow: #00000026 1.95px 1.95px 2.6px; /* Add box shadow */
+  padding: 1em; /* Set padding */
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  justify-content: space-between; /* Space between children */
+  align-items: center; /* Center children vertically */
+  gap: var(--element-padding-1); /* Use CSS variable for gap */
+}
+
+.tools {
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  gap: 5px; /* Set gap between children */
+  align-items: center; /* Align children vertically */
+  padding: 5px; /* Set padding */
+  border: 2px solid #bfbfbf; /* Set border */
+}
+
+.toolButton {
+  background-color: var(--color-2); /* Use CSS variable for background color */
+  border: none; /* Remove border */
+  padding: 7px; /* Set padding */
+  max-height: 100%; /* Set maximum height */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+.toolButton:hover {
+  background-color: var(--color-accent); /* Change background color on hover */
+}
+
+/* Styling for the tray container */
+.trayContainer {
+  display: none; /* Hide tray container by default */
+}
+
+.trayContainer.open {
+  display: initial; /* Display tray container when open */
+  position: absolute; /* Position absolute */
+  bottom: 100%; /* Position from bottom */
+  padding: var(--gap-1); /* Use CSS variable for padding */
+  background-color: var(--color-2); /* Use CSS variable for background color */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+  box-shadow: #00000026 1.95px 1.95px 2.6px; /* Add box shadow */
+}
+
+input[type="file"] {
+  display: none; /* Hide file input */
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane fx:id="anchorPane" prefHeight="560.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.ViewController">
+   <children>
+      <Button alignment="BOTTOM_CENTER" layoutX="358.0" layoutY="400.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: Green;" text="Start" textFill="#33ff25">
+         <font>
+            <Font name="Avenir Next Bold" size="28.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.82">
+               <color>
+                  <Color green="1.0" blue="0.18333333730697632" />
+               </color>
+            </InnerShadow>
+         </effect></Button>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="204.0" layoutY="195.0" prefHeight="171.0" prefWidth="410.0" text="The Snake Game" textAlignment="CENTER" textFill="#1eff00">
+         <font>
+            <Font name="Impact" size="46.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <ColorPicker fx:id="colorPicker" layoutX="346.0" layoutY="350.0" onAction="#handleColorChange" />
+      <Label layoutX="367" layoutY="470" text="Choose Music">
+      <font>
+         <Font name="Avenir Next Bold" size="12.0" />
+      </font>
+      </Label>
+      <ComboBox fx:id="musicComboBox" layoutX="335" layoutY="490" prefWidth="150" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Frogger" />
+               <String fx:value="Shota" />
+               <String fx:value="Tocame" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+   </children>
+</AnchorPane>

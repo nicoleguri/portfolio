@@ -1,0 +1,85 @@
+/**
+ * Styles for the Join page container.
+ * 
+ * Provides styling for the background color, height, and layout of the Join page.
+ */
+.joinPage{
+    background-color: var(--color-1);
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/**
+ * Styles for the form container within the Join page.
+ * 
+ * Provides styling for the background color, padding, border radius, and layout of the form.
+ */
+.joinForm{
+    background-color: var(--color-2);
+    padding: var(--padding-1) var(--padding-1);
+    border-radius: var(--border-radius-1);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: var(--gap-1);
+}
+
+/**
+ * Styles for the input fields within the form.
+ * 
+ * Provides styling for the box sizing, padding, border radius, border color, width, and text alignment of the input fields.
+ */
+.formInput{
+    box-sizing: border-box;
+    padding: var(--element-padding-1);
+    border-radius: var(--border-radius-1);
+    border: 1px solid var(--color-1);
+    width: 100%;
+    text-align: center;
+}
+
+
+/**
+ * Styles for the buttons within the form.
+ * 
+ * Provides styling for the background color, text color, padding, width, border radius, border color, cursor, and hover effect of the buttons.
+ */
+.formButton{
+    background-color: var(--color-1);
+    color: white;
+    padding: var(--element-padding-1);
+    width: 100%;
+    border-radius: var(--border-radius-1);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.33s ease-in-out;
+}
+
+.formButton:hover{
+    border: 2px solid var(--color-1);
+    background-color: transparent;
+    color: var(--color-1);
+}
+
+/**
+ * Styles for the divider within the form.
+ * 
+ * Provides styling for the border color and width of the divider.
+ */
+.formDivider{
+    border-top: 1px solid var(--color-1);
+    width: 100%;
+}
+
+/**
+ * Styles for the error message within the form.
+ * 
+ * Provides styling for the text color of the error message.
+ */
+.formErrorMessage{
+    color: var(--color-danger);
+}

@@ -1,0 +1,141 @@
+/* Styling for the dashboardPage */
+.dashboardPage {
+  background-color: var(--color-3); /* Use CSS variable for background color */
+  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  display: flex; /* Use flexbox layout */
+  flex-flow: column; /* Layout children in a column */
+}
+
+/* Styling for the dashboardNavbar */
+.dashboardNavbar {
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  justify-content: space-between; /* Space evenly between children */
+  align-items: center; /* Align items vertically at the center */
+  padding: 1em 3em; /* Padding of 1em on the top and bottom, 3em on the left and right */
+  background-color: var(--color-1); /* Use CSS variable for background color */
+}
+
+/* Styling for navigation buttons */
+.navButton1 {
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: 2px solid transparent; /* Transparent border */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for navigation buttons on hover */
+.navButton1:hover {
+  border: 2px solid var(--color-accent); /* Change border color on hover */
+  background-color: transparent; /* Transparent background color */
+  color: var(--color-2); /* Change text color on hover */
+}
+
+/* Styling for secondary navigation buttons */
+.navButton2 {
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: 2px solid #2f293a; /* Default border color */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Transparent background color */
+  color: var(--color-2); /* Use CSS variable for text color */
+  text-align: center; /* Center align text */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for secondary navigation buttons on hover */
+.navButton2:hover {
+  border: 2px solid var(--color-accent); /* Change border color on hover */
+  border-radius: 1rem; /* Add border radius on hover */
+}
+
+/* Styling for control elements */
+.controls {
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  gap: var(--gap-1); /* Spacing between children */
+}
+
+/* Styling for session container */
+.sessions {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: var(--gap-3);
+  padding-block: var(--padding-1);
+  padding-inline: 0;
+  background-color: var(--color-3);
+}
+
+/* Styling for individual session */
+.session {
+  background-color: var(--color-2); /* Use CSS variable for background color */
+  border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+  box-shadow: #00000026 1.95px 1.95px 2.6px; /* Box shadow */
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  display: flex; /* Use flexbox layout */
+  flex-flow: row; /* Layout children in a row */
+  align-items: center; /* Center align items vertically */
+  gap: var(--gap-1); /* Spacing between elements */
+}
+
+/* Styling for session name input */
+.nameInput {
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: 2px solid #d0d0d0; /* Default border color */
+  text-align: center; /* Center align text */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for session name input on hover */
+.nameInput:hover {
+  border: 2px solid var(--color-accent); /* Change border color on hover */
+}
+
+/* Styling for buttons */
+.button {
+  background-color: #e0e0e0; /* Default background color */
+  padding: var(--element-padding-1); /* Use CSS variable for padding */
+  border: 2px solid transparent; /* Transparent border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for buttons on hover */
+.button:hover {
+  border: 2px solid var(--color-1); /* Change border color on hover */
+  background-color: var(--color-1); /* Change background color on hover */
+  color: var(--color-2); /* Change text color on hover */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .dashboardNavbar {
+    display: flex;
+    flex-flow: column-reverse;
+    gap: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+  .controls {
+    width: 100%; /* Full width */
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Layout children in a row */
+    justify-content: space-between; /* Space between children */
+  }
+  .navButton1 {
+    width: 100%; /* Full width */
+  }
+  .navButton2 {
+    width: 100%; /* Full width */
+  }
+  .session {
+    display: flex; /* Use flexbox layout */
+    flex-flow: column; /* Layout children in a column */
+  }
+  .button {
+    width: 100%; /* Full width */
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="800.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.HighestScore">
+   <children>
+      <Label alignment="CENTER" layoutX="270.0" layoutY="78.0" text="All Time Scores" textFill="#f20808">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+       <ListView fx:id="scoreList" layoutX="240.0" layoutY="168.0" prefHeight="324.0" prefWidth="340.0" />
+   </children>
+</AnchorPane>

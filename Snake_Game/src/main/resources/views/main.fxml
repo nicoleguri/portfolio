@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackPane" prefHeight="560.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.GameController">
+    <children>
+        <!-- Pause Button -->
+        <Button fx:id="pauseButton" layoutX="650" layoutY="10" onAction="#handlePause" style="-fx-background-color: orange; -fx-text-fill: green;" text="Pause" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="20.0" right="20.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+        </Button>
+
+        <!-- Resume Button -->
+        <Button fx:id="resumeButton" layoutX="730" layoutY="20.0" onAction="#handleResume" style="-fx-background-color: orange; -fx-text-fill: green;" text="Resume" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="20.0" right="90.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+        </Button>
+    </children>
+</StackPane>

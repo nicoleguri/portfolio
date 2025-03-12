@@ -1,0 +1,91 @@
+/* Styling for the WhiteboardChat component */
+.whiteboardChat {
+    width: 21vw; /* Set width to 21% of the viewport width */
+    display: flex; /* Use flexbox layout */
+    flex-flow: column; /* Layout children in a column */
+    justify-content: space-between; /* Space between children */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    padding-top: 0; /* Remove top padding */
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Use CSS variable for text color */
+}
+
+/* Hide WhiteboardChat component on screens wider than 1200px */
+@media screen and (max-width: 1200px){
+    .whiteboardChat{
+        display: none;
+    }
+}
+
+/* Styling for the header section */
+.header {
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for the text section */
+.textSection {
+    display: flex; /* Use flexbox layout */
+    flex-flow: column; /* Layout children in a column */
+    height: 100%; /* Occupy full height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styling for received text messages */
+.receivedText {
+    text-align: left; /* Align text to the left */
+    margin-right: 5rem; /* Add right margin */
+}
+
+/* Styling for sent text messages */
+.sentText {
+    text-align: right; /* Align text to the right */
+    margin-left: 5rem; /* Add left margin */
+}
+
+/* Styling for user names in messages */
+.textUser {
+    font-size: small; /* Use small font size */
+}
+
+/* Styling for message text */
+.textMessage {
+    background-color: var(--color-2); /* Use CSS variable for background color */
+    color: var(--color-1); /* Use CSS variable for text color */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+    font-size: small; /* Use small font size */
+}
+
+/* Styling for the send section */
+.sendSection {
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Layout children in a row */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+}
+
+/* Styling for the message input field */
+.sendInput {
+    box-sizing: border-box; /* Include border and padding in width */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: var(--border-radius-1) 0 0 var(--border-radius-1); /* Apply border radius to specific corners */
+    border: none; /* Remove border */
+    width: 100%; /* Occupy full width */
+}
+
+/* Styling for the send button */
+.sendButton {
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Use CSS variable for text color */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0; /* Apply border radius to specific corners */
+    border: 2px solid var(--color-2); /* Add border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for the send button on hover */
+.sendButton:hover {
+    background-color: var(--color-accent); /* Change background color on hover */
+    color: var(--color-1); /* Change text color on hover */
+}

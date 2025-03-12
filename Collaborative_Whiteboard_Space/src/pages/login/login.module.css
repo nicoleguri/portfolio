@@ -1,0 +1,87 @@
+/* Styling for the loginPage */
+.loginPage {
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    display: flex; /* Use flexbox layout */
+    flex-flow: column; /* Layout children in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 1rem; /* Padding of 1rem */
+}
+
+/* Styling for the loginForm */
+.loginForm {
+    background-color: var(--color-2); /* Use CSS variable for background color */
+    padding: var(--padding-1) var(--padding-1); /* Padding */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+    display: flex; /* Use flexbox layout */
+    flex-flow: column; /* Layout children in a column */
+    align-items: center; /* Center content horizontally */
+    gap: var(--gap-1); /* Spacing between children */
+}
+
+/* Styling for formInput */
+.formInput {
+    box-sizing: border-box; /* Include border and padding in width */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+    border: 1px solid var(--color-1); /* Border */
+    width: 100%; /* Occupy full width */
+}
+
+/* Styling for formButton */
+.formButton {
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: white; /* Text color */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    width: 100%; /* Occupy full width */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+    border: 2px solid transparent; /* Border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: 0.33s ease-in-out; /* Add transition effect */
+}
+
+/* Styling for formButton on hover */
+.formButton:hover {
+    border: 2px solid var(--color-1); /* Border on hover */
+    background-color: transparent; /* Background color on hover */
+    color: var(--color-1); /* Text color on hover */
+}
+
+/* Styling for formDivider */
+.formDivider {
+    border-top: 1px solid var(--color-1); /* Border */
+    width: 100%; /* Occupy full width */
+}
+
+/* Styling for formErrorMessage */
+.formErrorMessage {
+    color: var(--color-danger); /* Text color for error message */
+}
+
+/* Styling for passwordField */
+.passwordField {
+    color: var(--color-2); /* Text color */
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Layout children in a row */
+    border-radius: var(--border-radius-1); /* Use CSS variable for border radius */
+}
+
+/* Styling for passwordInput */
+.passwordInput {
+    box-sizing: border-box; /* Include border and padding in width */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: var(--border-radius-1) 0 0 var(--border-radius-1); /* Apply border radius to specific corners */
+    border: 1px solid var(--color-1); /* Border */
+    width: 100%; /* Occupy full width */
+}
+
+/* Styling for showButton */
+.showButton {
+    background-color: var(--color-1); /* Use CSS variable for background color */
+    color: var(--color-2); /* Text color */
+    padding: var(--element-padding-1); /* Use CSS variable for padding */
+    border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0; /* Apply border radius to specific corners */
+    border: 1px solid var(--color-1); /* Border */
+    cursor: pointer; /* Change cursor to pointer */
+}

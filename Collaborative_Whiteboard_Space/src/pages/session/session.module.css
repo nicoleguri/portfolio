@@ -1,0 +1,18 @@
+.whiteboardPage {
+    height: 100vh; /* Set height to 100% of the viewport height */
+    max-height: 100vh; /* Ensure the height does not exceed the viewport height */
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.whiteboardSection {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Use flexbox layout */
+    flex-flow: row; /* Arrange children in a row */
+    justify-content: space-between; /* Distribute space between children */
+    gap: var(--gap-2); /* Set the gap between children */
+    padding: var(--element-padding-1); /* Apply padding */
+    background-color: var(--color-2); /* Use a specific background color */
+    height: 90vh; /* Set height to 90% of the viewport height */
+    max-height: 90vh; /* Ensure the height does not exceed 90% of the viewport height */
+    overflow: hidden; /* Hide any content that overflows the container */
+}
